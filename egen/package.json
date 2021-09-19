@@ -1,0 +1,21 @@
+{
+  "name": "egen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-youtube-music": "^0.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

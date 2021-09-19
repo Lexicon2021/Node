@@ -1,0 +1,16 @@
+{
+  "name": "egna-moduler",
+  "version": "1.0.0",
+  "description": "Att använda egna moduler",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Max Carlquist",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

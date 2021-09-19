@@ -1,0 +1,25 @@
+{
+  "name": "tidvisare",
+  "version": "1.0.0",
+  "description": "en module som visar tiden",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tid",
+    "visare",
+    "super",
+    "cool"
+  ],
+  "author": "Max Carlquist",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
