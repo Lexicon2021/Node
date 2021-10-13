@@ -9,8 +9,8 @@ connection();
 app.use(express.json());
 
 app.post('/user', (req, res) => {
-    const data = new User(req.body);
-    data.save()
+    const user = new User(req.body);
+    user.save()
     .then(user => {
         console.log('user saved', user);
         res.send('user saved');
