@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const url = 'mongodb://localhost:27017';
 const client = new MongoClient(url);
 
-const dbName = 'max-test';
+const dbName = 'max-lexicon';
 
 async function main() {
     // Use connect method to connect to the server
