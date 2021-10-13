@@ -17,10 +17,6 @@ async function main() {
     const mgDB = mongoose.connection;
     mgDB.on('connected', console.log.bind(console, 'MongoDB & Mongoose Connected'));
 
-    const collection = db.collection('documents');
-
-    // the following code examples can be pasted here...
-
     return 'done.';
 }
 
