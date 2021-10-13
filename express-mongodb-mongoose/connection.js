@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const url = 'mongodb://localhost:27017';
 const client = new MongoClient(url);
 
-const dbName = 'max-test';
+const dbName = 'max-lexicon';
 
 async function main() {
     // Use connect method to connect to the server
@@ -16,10 +16,6 @@ async function main() {
 
     const mgDB = mongoose.connection;
     mgDB.on('connected', console.log.bind(console, 'MongoDB & Mongoose Connected'));
-
-    const collection = db.collection('documents');
-
-    // the following code examples can be pasted here...
 
     return 'done.';
 }
