@@ -1,0 +1,1 @@
+console.log(process); // *** vad kan detta objekt inehålla? Det är som Window i browsern.
