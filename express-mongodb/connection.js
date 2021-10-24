@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const mongoose = require('mongoose');
+
 
 // Connection URL
 const url = 'mongodb://localhost:27017';
@@ -14,7 +14,6 @@ async function main(firstName, lastName) {
     const db = client.db(dbName);
     
     const userCollection = db.collection('users');
-    console.log(firstName, lastName);
     const addUser = await userCollection.insertOne({
         firstName,
         lastName
