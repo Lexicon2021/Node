@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const pages = require('./routes/pages');
 dotenv.config();
 
 
@@ -12,15 +13,15 @@ mongoose.connect(process.env.DB_CONNECT, { useUnifiedTopology: true, useNewUrlPa
 });
 
 const authRoute = require('./routes/auth');
-const postRoute = require('./routes/posts');
+const secureRoute = require('./routes/secure');
 
 // Middlewares
 app.use(express.json());
-
+app.use(express.static('public'));
 // Route Middleware
 app.use('/api/user', authRoute);
-app.use('/api/posts', postRoute);
-
+app.use('/api/secure', secureRoute);
+app.use('/', pages);
 
 app.listen(3000, () => {
     console.log('Server running');
